@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Register Form</title>
+  </head>
+  <body>
+    <form>
+      <h1>Register Form</h1>
+      <div class="container">
+        <label for="InputName" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="InputName"
+          required
+        />
+        <div class="container">
+            <label for="InputEmail1" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="InputEmail1"
+              aria-describedby="emailHelp"
+              required
+            />
+        
+        <div class="container">
+          <label for="InputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="InputPassword1"
+            required
+          />
+        </div>
+
+        <div class="container">
+            <label for="InputPhoneNO" class="form-label">Phone Number</label>
+            <input
+              type="number"
+              class="form-control"
+              id="InputPhoneNO"
+              required
+            />
+          </div>
+
+          <div class="container">
+            <label for="InputAddress" class="form-label">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="InputAddress"
+              required
+            />
+          </div>
+
+
+
+          <div class="Gender">
+            <h4>Gender</h4>
+          
+            <div class="gender-options">
+              <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" >
+              <label class="form-check-label" for="genderMale">Male</label>
+            </div>
+          
+            <div class="gender-options">
+              <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" >
+              <label class="form-check-label" for="genderFemale">Female</label>
+            </div>
+          
+            <div class="gender-options">
+              <input class="form-check-input" type="radio" name="gender" id="genderOther" value="other" >
+              <label class="form-check-label" for="genderOther">Other</label>
+            </div>
+          </div>
+          
+          <fieldset>
+            <legend>Please select your preferred contact method:</legend>
+            <div>
+              <input
+                type="radio"
+                id="contactChoice1"
+                name="contact"
+                value="email"
+                
+              />
+              <label for="contactChoice1">Email</label>
+          
+              <input
+                type="radio"
+                id="contactChoice2"
+                name="contact"
+                value="phone"
+                
+              />
+              <label for="contactChoice2">Phone</label>
+          
+              <input type="radio" id="contactChoice3" name="contact" value="mail"  />
+              <label for="contactChoice3">Mail</label>
+            </div>
+          </fieldset>
+          
+        <div>
+            <div class="submit form-check">
+                <input type="checkbox" class="form-check-input" id="Check1" />
+                <label class="form-check-label" for="Check1">Remember me</label>
+              </div>
+
+              
+          
+          <button class="button open-button" type="submit">Submit</button>
+
+            <dialog class="modal" id="modal">
+            <h2>Registration Successful</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quo.</p>
+            <button class="button close-button">close modal</button>
+            </dialog>
+         
+
+          
+          
+        </div>
+        
+        
+      </fieldset>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>

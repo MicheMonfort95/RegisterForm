@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-family: 'Zeyada', cursive;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    45deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  color: black;
+  padding: 10px;
+}
+
+form {
+  width: 40%;
+  border: 3px solid;
+  box-shadow: 5px 5px 20px;
+  border-radius: 20px;
+  padding: 2em;
+}
+
+button {
+  font-size: 18px;
+  background-color: aliceblue;
+  width: 45%;
+  height: 2em;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: rgb(34, 193, 195);
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: rgba(255, 234, 0, 0.342);
+}
+
+input {
+  margin-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  height: 2.5em;
+  border-radius: 20px;
+}
+
+.form-label {
+  font-size: 20px;
+}
+
+legend {
+  padding: 20px;
+}
+
+.modal {
+    padding: 1em;
+    max-width: 100%;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    margin: 2em;
+    padding: 2em;
+    
+  
+}
+  
+.modal::backdrop {
+    background: rgb(0 0 0 / 0.4);
+}
+
+/*
+.container,
+.gender {
+  display: initial;
+  justify-content: initial;
+  text-align: initial;
+}
+
+.container,
+.form-check-input {
+  display: initial;
+  justify-content: initial;
+  text-align: initial;
+}
+
+div.gender,
+.form-check.form-check-inline {
+  display: initial;
+  justify-content: initial;
+  text-align: initial;
+}
